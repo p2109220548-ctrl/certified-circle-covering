@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+Thumbs.db
+.DS_Store
+*.tmp
+upgrade_checkpoint.json
+lp_checkpoint.json

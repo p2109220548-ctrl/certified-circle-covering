@@ -1,0 +1,71 @@
+{
+ "threshold_exact": 0.10953085699598886,
+ "threshold_reported": 0.109525,
+ "curve": [
+  [
+   0.1,
+   -Infinity
+  ],
+  [
+   0.101,
+   -Infinity
+  ],
+  [
+   0.102,
+   -Infinity
+  ],
+  [
+   0.103,
+   -Infinity
+  ],
+  [
+   0.104,
+   -Infinity
+  ],
+  [
+   0.105,
+   -Infinity
+  ],
+  [
+   0.106,
+   -Infinity
+  ],
+  [
+   0.107,
+   -Infinity
+  ],
+  [
+   0.108,
+   -Infinity
+  ],
+  [
+   0.109,
+   -Infinity
+  ],
+  [
+   0.11,
+   3.5496059919262666
+  ],
+  [
+   0.111,
+   3.675416896429886
+  ],
+  [
+   0.112,
+   3.7766518695303746
+  ],
+  [
+   0.113,
+   3.8715308767949645
+  ],
+  [
+   0.114,
+   3.9595084957494304
+  ],
+  [
+   0.115,
+   4.043673339859226
+  ]
+ ],
+ "note": "continuous radial LP; corner lemma verified by dense sampling"
+}

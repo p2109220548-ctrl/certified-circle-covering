@@ -1,0 +1,51 @@
+[   0.0s] ring grid: K=320
+[  12.7s] LP bisection: r=0.106650000
+[  24.3s]   cut-round 0: sup_fine=0.010000226 at d=0.730400  slack=-2.259e-07
+[  37.4s]   cut-round 1: sup_fine=0.010000219 at d=0.739264  slack=-2.193e-07
+[  54.4s]   cut-round 2: sup_fine=0.010000145 at d=0.225336  slack=-1.446e-07
+[  73.1s]   cut-round 3: sup_fine=0.010000310 at d=0.734843  slack=-3.096e-07
+[  90.3s]   cut-round 4: sup_fine=0.010000190 at d=0.749822  slack=-1.896e-07
+[ 112.3s]   cut-round 5: sup_fine=0.010000186 at d=0.385457  slack=-1.859e-07
+[ 124.9s] after cutting: r=0.106650000  sup_fine=0.010000186
+[ 141.4s]   cut-round 0: sup_fine=0.010000329 at d=0.718330  slack=-3.293e-07
+[ 163.9s]   cut-round 0: LP became infeasible on refined grid
+[ 185.7s]   cut-round 0: sup_fine=0.010000354 at d=0.725669  slack=-3.538e-07
+[ 208.2s]   cut-round 1: sup_fine=0.010000207 at d=0.760348  slack=-2.066e-07
+[ 233.0s]   cut-round 2: sup_fine=0.010000269 at d=0.734705  slack=-2.689e-07
+[ 255.3s]   cut-round 2: LP became infeasible on refined grid
+[ 269.0s]   cut-round 0: sup_fine=0.010000137 at d=0.905315  slack=-1.369e-07
+[ 294.1s]   cut-round 1: sup_fine=0.010000213 at d=0.748702  slack=-2.134e-07
+[ 316.7s]   cut-round 1: LP became infeasible on refined grid
+[ 332.1s]   cut-round 0: sup_fine=0.010000398 at d=0.716424  slack=-3.984e-07
+[ 354.5s]   cut-round 0: LP became infeasible on refined grid
+[ 371.7s]   cut-round 0: sup_fine=0.010000339 at d=0.756252  slack=-3.387e-07
+[ 393.7s]   cut-round 1: sup_fine=0.010000202 at d=0.730251  slack=-2.023e-07
+[ 417.4s]   cut-round 2: sup_fine=0.010000162 at d=0.905862  slack=-1.616e-07
+[ 469.2s]   cut-round 0: sup_fine=0.010000218 at d=0.745536  slack=-2.183e-07
+[ 483.5s]   cut-round 1: sup_fine=0.010000255 at d=0.209657  slack=-2.551e-07
+[ 497.9s]   cut-round 2: sup_fine=0.010000154 at d=0.238795  slack=-1.540e-07
+[ 530.3s]   cut-round 0: sup_fine=0.010000517 at d=0.721201  slack=-5.168e-07
+[ 550.3s]   cut-round 1: sup_fine=0.010000221 at d=0.560171  slack=-2.208e-07
+[ 572.7s]   cut-round 1: LP became infeasible on refined grid
+[ 588.8s]   cut-round 0: sup_fine=0.010000428 at d=0.751263  slack=-4.280e-07
+[ 613.8s]   cut-round 1: sup_fine=0.010000282 at d=0.736329  slack=-2.816e-07
+[ 636.1s]   cut-round 1: LP became infeasible on refined grid
+[ 650.3s]   cut-round 0: sup_fine=0.010000299 at d=0.724349  slack=-2.988e-07
+[ 666.2s]   cut-round 1: sup_fine=0.010000243 at d=0.765124  slack=-2.425e-07
+[ 688.7s]   cut-round 1: LP became infeasible on refined grid
+[ 688.7s] final LP limit: r=0.106661719
+[ 688.7s] pruned K: 320 -> 103
+[2003.0s] CERTIFIED: r=0.106511219  sup_upper=0.010000545225  n_grid=42704  (K_active=119)
+Traceback (most recent call last):
+  File "C:\Users\p2109\WorkBuddy\2026-09-25-01-52-16\cover100\agentH_radial_closure\radial_true.py", line 271, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\p2109\WorkBuddy\2026-09-25-01-52-16\cover100\agentH_radial_closure\radial_true.py", line 223, in main
+    ub_s, _ = rigorous_sup(t_act, w_fix, r_strict, h0=2e-3, cap=CAP,
+              ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                           max_points=60_000)
+                           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p2109\WorkBuddy\2026-09-25-01-52-16\cover100\agentB_measure\measure_bound.py", line 112, in rigorous_sup
+    Fa = Phi[:-1] @ w
+         ~~~~~~~~~^~~
+ValueError: matmul: Input operand 1 does not have enough dimensions (has 0, gufunc core with signature (n?,k),(k,m?)->(n?,m?) requires 1)

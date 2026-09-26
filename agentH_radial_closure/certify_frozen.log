@@ -1,0 +1,17 @@
+[   0.0s] repair: loaded agentF cert r=0.105758912 sup_upper=0.010000090762 (>CAP: True)
+[   0.0s] repair: pruned K=88 -> 21
+[   0.4s]   repair it=0 r=0.105758912 ub=0.010000115048 
+[   0.4s]   repair it=1 r=0.105756912 ub=0.009999999760 PASS
+[   0.4s] repair DONE: r=0.105756912 (was 0.105758912, delta=2.00e-06)  ub=0.009999999760
+[ 143.5s]   cut-round 0: sup_fine=0.010000168 at d=0.760694  slack=-1.679e-07
+[ 158.0s]   cut-round 1: sup_fine=0.010000188 at d=0.745355  slack=-1.877e-07
+[ 179.4s]   cut-round 1: LP became infeasible on refined grid
+[ 186.8s]   cut-round 0: sup_fine=0.010000171 at d=0.931491  slack=-1.712e-07
+[ 195.5s]   cut-round 1: sup_fine=0.010000559 at d=0.730409  slack=-5.593e-07
+[ 204.2s]   cut-round 2: sup_fine=0.010000168 at d=0.376041  slack=-1.682e-07
+[ 213.1s]   cut-round 3: sup_fine=0.010000176 at d=0.750135  slack=-1.756e-07
+[ 219.8s] new: LP phase done r_lp=0.106638535
+[ 219.8s] new: checkpoint saved (K_active=86)
+[ 219.9s] new: probe A r=0.106623535 ub=0.009999999016
+[ 220.0s] new: re-verify h0=5e-4 ub=0.009999999016
+[ 220.0s] new DONE: r=0.106623535  ub=0.009999999016  (LP limit 0.106638535, frozen-shrink cost 1.50e-05)

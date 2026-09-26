@@ -1,0 +1,12 @@
+{
+  "a_slab_max_diff": 1.940892801857738e-13,
+  "b_dstar_diff": 7.216449660063518e-16,
+  "concave_sd_max": -0.004132823944180686,
+  "concave_sd_argmax_b": 0.001,
+  "concave_all_negative": true,
+  "concave_noise_bound": 0.5602149697346893,
+  "c3_theory": 0.6536159278183868,
+  "a_star": 0.018983602136621494,
+  "g_decreasing_max_diff": -1.991319401040137e-10,
+  "a_decreasing_max_diff": -6.566254376707582e-10
+}

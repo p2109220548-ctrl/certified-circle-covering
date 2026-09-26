@@ -1,0 +1,58 @@
+[seed] centers_hex_0.2066_0.json: n=100 R=0.1330297
+[seed] centers_hex_0.2090_130.json: n=100 R=0.1274262
+[marathon3] 8 chains, seeds ready at 71s
+[gpu_hybrid] sample points: 73728, device: cuda
+[gpu_hybrid] start best = 0.117076225
+[round 1] chain Rs: 0.1170612 0.1170625 0.1170625 0.1170611 0.1178423 0.1170625 0.1179388 0.1209556 | best 0.117061073 | 341s
+[round 2] chain Rs: 0.1170474 0.1170479 0.1170477 0.1170482 0.1178423 0.1170485 0.1179257 0.1196203 | best 0.117047380 | 685s
+[round 3] chain Rs: 0.1170360 0.1170349 0.1170350 0.1170352 0.1178423 0.1170347 0.1179147 0.1192025 | best 0.117034660 | 1034s
+[round 4] chain Rs: 0.1170243 0.1170240 0.1170236 0.1170234 0.1178423 0.1170241 0.1179033 0.1188228 | best 0.117023435 | 1377s
+[round 5] chain Rs: 0.1170137 0.1170134 0.1170139 0.1170138 0.1178423 0.1170142 0.1178959 0.1184517 | best 0.117013450 | 1722s
+[round 6] chain Rs: 0.1170033 0.1170033 0.1170040 0.1170039 0.1178423 0.1170045 0.1178897 0.1182653 | best 0.117003269 | 2065s
+[round 7] chain Rs: 0.1169950 0.1169953 0.1169955 0.1169952 0.1178423 0.1169958 0.1178840 0.1182096 | best 0.116994975 | 2414s
+[round 8] chain Rs: 0.1169879 0.1169879 0.1169879 0.1169882 0.1178423 0.1169880 0.1178785 0.1181508 | best 0.116987860 | 2771s
+[round 9] chain Rs: 0.1169815 0.1169812 0.1169816 0.1169814 0.1178423 0.1169814 0.1178735 0.1180968 | best 0.116981224 | 3124s
+[round 10] chain Rs: 0.1169747 0.1169751 0.1169746 0.1169749 0.1178423 0.1169747 0.1178693 0.1180200 | best 0.116974639 | 3502s
+[round 11] chain Rs: 0.1169694 0.1169694 0.1169692 0.1169698 0.1178423 0.1169690 0.1178657 0.1179418 | best 0.116968993 | 3870s
+[round 12] chain Rs: 0.1169635 0.1169645 0.1169645 0.1169646 0.1178423 0.1169640 0.1178625 0.1178498 | best 0.116963544 | 4241s
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\p2109\.workbuddy\binaries\python\versions\3.13.12\Lib\multiprocessing\pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\p2109\.workbuddy\binaries\python\versions\3.13.12\Lib\multiprocessing\pool.py", line 48, in mapstar
+    return list(map(*args))
+  File "C:\Users\p2109\WorkBuddy\2026-09-25-01-52-16\cover100\gpu_hybrid.py", line 38, in _polish_task
+    C2, R2 = coordinate_descent(C2, R2, steps=(2e-4, 3e-5), passes=1)
+             ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p2109\WorkBuddy\2026-09-25-01-52-16\cover100\construct.py", line 74, in coordinate_descent
+    R2 = covering_radius(C)
+  File "C:\Users\p2109\WorkBuddy\2026-09-25-01-52-16\cover100\geometry.py", line 101, in covering_radius
+    R = max(R, float(_g_values(P, C).max()))
+                     ~~~~~~~~~^^^^^^
+  File "C:\Users\p2109\WorkBuddy\2026-09-25-01-52-16\cover100\geometry.py", line 63, in _g_values
+    - 2.0 * (P @ C.T))
+      ~~~~^~~~~~~~~~~
+numpy._core._exceptions._ArrayMemoryError: Unable to allocate 7.63 MiB for an array with shape (10000, 100) and data type float64
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\p2109\WorkBuddy\2026-09-25-01-52-16\cover100\agentI_marathon3\run_marathon3.py", line 82, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\p2109\WorkBuddy\2026-09-25-01-52-16\cover100\agentI_marathon3\run_marathon3.py", line 78, in main
+    marathon(starts, hours=hours, chains=len(starts), workers=workers, out=HERE)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p2109\WorkBuddy\2026-09-25-01-52-16\cover100\gpu_hybrid.py", line 83, in main
+    results = pool.map(_polish_task,
+                       [(c, r, int(rng.integers(1 << 30)))
+                        for c, r in chosen])
+  File "C:\Users\p2109\.workbuddy\binaries\python\versions\3.13.12\Lib\multiprocessing\pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\p2109\.workbuddy\binaries\python\versions\3.13.12\Lib\multiprocessing\pool.py", line 774, in get
+    raise self._value
+numpy._core._exceptions._ArrayMemoryError: Unable to allocate 7.63 MiB for an array with shape (10000, 100) and data type float64

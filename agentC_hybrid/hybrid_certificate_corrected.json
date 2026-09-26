@@ -1,0 +1,5 @@
+{
+ "threshold_exact": 0.10247074072541729,
+ "threshold_reported": 0.102465,
+ "note": "corrected aggregation (max over viable m) + geometric m-cap 100-(1-2r)^2/r^2; supersedes unsound min-over-m"
+}

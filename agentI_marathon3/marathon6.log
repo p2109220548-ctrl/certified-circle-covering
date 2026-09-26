@@ -1,0 +1,5 @@
+[seed] centers_hex_0.2066_0.json: n=100 R=0.1330297
+[seed] centers_hex_0.2090_130.json: n=100 R=0.1274262
+[marathon3] 8 chains, seeds ready at 83s
+[gpu_hybrid] sample points: 73728, device: cuda
+[gpu_hybrid] start best = 0.116963544
