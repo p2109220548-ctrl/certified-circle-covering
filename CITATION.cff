@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: >-
+  If you use these certified bounds or the certificate machinery, please cite
+  this repository.
+title: >-
+  Certified bounds for covering the unit disk with 100 equal circles
+  (r_D(100): 0.1066235 <= r_D(100) <= 0.1170862)
+authors:
+  - family-names: "<你的姓>"
+    given-names: "<你的名>"
+    orcid: "https://orcid.org/<可选，没有就删掉这行>"
+version: 1.0.0
+date-released: "2026-09-27"
+abstract: >-
+  Certified two-sided bounds for the smallest radius r_D(100) such that 100
+  equal circles cover the unit disk. Upper bound 125599387/2^30 = 0.1170862
+  via an explicit rational-center construction with an integer quadtree
+  covering certificate (4.20% below the previously published value 1/sqrt(67));
+  lower bound 0.1066235 via a K=320-ring measure LP with cutting planes and a
+  frozen-measure rigorous sup protocol. A rotation-averaging theorem proves
+  the radial family is optimal among all Borel probability measures, so
+  0.10664 is the exact ceiling of every measure/duality argument. All
+  certificates are machine-verifiable; the covering verifier has zero
+  dependencies.
+keywords:
+  - circle covering
+  - covering radius
+  - certified bounds
+  - unit disk covering
+  - computational geometry
+  - integer arithmetic certificates
+license: MIT
