@@ -4,7 +4,7 @@ message: >-
   this repository.
 title: >-
   Certified bounds for covering the unit disk with 100 equal circles
-  (r_D(100): 0.1066235 <= r_D(100) <= 0.1170862)
+  (r_D(100): 0.1066235 <= r_D(100) <= 0.1169288)
 authors:
   - family-names: "<你的姓>"
     given-names: "<你的名>"
@@ -13,9 +13,9 @@ version: 1.0.0
 date-released: "2026-09-27"
 abstract: >-
   Certified two-sided bounds for the smallest radius r_D(100) such that 100
-  equal circles cover the unit disk. Upper bound 125599387/2^30 = 0.1170862
+  equal circles cover the unit disk. Upper bound 125551361/2^30 = 0.1169288
   via an explicit rational-center construction with an integer quadtree
-  covering certificate (4.20% below the previously published value 1/sqrt(67));
+  covering certificate (4.28% below the previously published value 1/sqrt(67));
   lower bound 0.1066235 via a K=320-ring measure LP with cutting planes and a
   frozen-measure rigorous sup protocol. A rotation-averaging theorem proves
   the radial family is optimal among all Borel probability measures, so

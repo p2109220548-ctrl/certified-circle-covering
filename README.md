@@ -1,15 +1,15 @@
 # Certified Bounds for Covering the Unit Disk with 100 Equal Circles
 
-**r_D(100) — certified window (2026-09-26):**
+**r_D(100) — certified window (2026-09-27):**
 
-```
-0.1066235  ≤  r_D(100)  ≤  0.1170862      (width 0.0105)
+```text
+0.1066235  ≤  r_D(100)  ≤  0.1169288      (width 0.0103)
 ```
 
-- **Upper bound** `0.1170862 = 125599387/2^30`: explicit 100-center configuration
+- **Upper bound** `0.1169288 = 125551361/2^30`: explicit 100-center configuration
   (hexagonal-basin optimum, GPU-assisted search) + integer quadtree covering
-  certificate (VERIFIED, 9422 boxes, 0.5 s re-verification, integer arithmetic only).
-  Literature value was `1/√67 ≈ 0.12217` — a **4.20% improvement**.
+  certificate (VERIFIED, 11237 boxes, 0.3 s re-verification, integer arithmetic only).
+  Literature value was `1/√67 ≈ 0.12217` — a **4.28% improvement**.
 - **Lower bound** `0.1066235`: K=320-ring measure LP + cutting planes, certified
   by a frozen-measure rigorous sup protocol (`sup_upper = 0.009999999016 < 1/100`,
   explicit margin 9.8e-10).
@@ -23,9 +23,10 @@
 
 Determining r_D(100) exactly with a global-optimality proof (requirements #1+#4
 of the original problem) is an **open problem** — optimality is not proven for
-any n ≥ 11. What IS delivered: explicit construction (#2), machine-verifiable
-covering proof (#3), the area-type exact-radius format at α = 1/10 (#1), and
-certified two-sided bounds. This repository makes no claim about the exact value.
+any n ≥ 11. This repository makes no claim about the exact value. What IS
+delivered: explicit construction (#2), a machine-verifiable covering proof (#3),
+the exact-radius format at α = 1/10 (#1), and certified two-sided bounds with a
+fully reproducible certificate chain.
 
 ## Repository map
 
